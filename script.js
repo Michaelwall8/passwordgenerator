@@ -132,24 +132,24 @@ function generatePassword(){
 
     if (lowerCase === true) {
       for (let i = 0; i < Math.ceil(passSize / passOption) ; i++) {
-        passArray.push(lowerCases[i])       
+        passArray.push(lowerCases[Math.floor(Math.random() * 25)])       
         
       }
     }
     if (upperCase === true) {
       for (let i = 0; i < Math.ceil(passSize / passOption) ; i++) {
-        passArray.push(upperCases[i])
+        passArray.push(upperCases[Math.floor(Math.random() * 25)] )
       }
     }
     if (number === true) {
       for (let i = 0; i < Math.ceil(passSize / passOption) ; i++) {
-        passArray.push(numbers[i])
+        passArray.push(numbers[Math.floor(Math.random() * 10)])
       }
       
     }
     if (symbol === true) {
       for (let i = 0; i < Math.ceil(passSize / passOption) ; i++) {
-        passArray.push(symbols[i])
+        passArray.push(symbols[Math.floor(Math.random() * 23)])
         
         
       }
